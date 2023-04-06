@@ -13,7 +13,7 @@ const App = () => {
         fetch("https://jsonplaceholder.typicode.com/users")
         .then(res => res.json())
         .then(data => setRobots( data ));
-    })
+    }, [])
     
     const onSearchChange = (event) => {
         setSearchField(event.target.value);
